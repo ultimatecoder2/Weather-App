@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Here we are acessing the absolute path. If we use in our machine then this path will be  
+         bring to the root of the hard drive. But as here we are using it on the web server, it willbring to the root
+         of the web-server i.e. public folder.
+         
+        using href="./css/styles.css" means that path is relative to the current file(here 'about.html').
+    -->
+        <title>About</title>
+    </head>
+    <body>
+        <div class="main-content">
+            {{>headers}}
+            <h2>Here you will come to know about the creator of this website.  </h2>
+            <img src="/img/Mickey.png" class = "portrait">
+        </div>
+    
+        {{>footers}}
+    </body>
+
+</html>
